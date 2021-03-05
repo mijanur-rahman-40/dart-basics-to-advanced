@@ -325,7 +325,6 @@ void main(List<String> arguments) {
   //to check odd or even
   for (var k = 0; k < 10; k++) {
     if (k % 2 == 0) continue;
-    print("Odd : $k");
+    print('Odd : $k');
   }
-
 }
