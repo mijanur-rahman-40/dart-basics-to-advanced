@@ -15,9 +15,8 @@ Future<String> fetchUserOrder1() =>
       () => 'Large Latte',
     );
 
-    
 Future<void> main(List<String> args) async {
-  fetchUserOrder();
+  await fetchUserOrder();
   print('object');
   print('Fetching user order...');
   print(await createOrderMessage());
@@ -27,7 +26,7 @@ Future<void> main(List<String> args) async {
   });
 
   print('1');
-  myFuture
+  await myFuture
       .then((value) => print(value))
       .catchError((error) => print(error))
       .then((value) => print('value'));
