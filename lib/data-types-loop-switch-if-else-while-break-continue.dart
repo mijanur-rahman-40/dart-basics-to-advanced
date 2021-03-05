@@ -112,8 +112,7 @@ void main(List<String> arguments) {
   multi-line strings like this one.  
   ''';
 
-  var _str1 = """This is also a
-  multi-line string""";
+  var _str1 = 'This is also a multi-line string';
   print(_str);
   print(_str1);
 
