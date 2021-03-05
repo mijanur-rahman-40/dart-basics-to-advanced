@@ -34,13 +34,6 @@ void showOutput(message) {
   print('the square/rectangle area is : $message');
 }
 
-class Number {
-  int num = 10;
-}
-
-void printNumber(number) {
-  print(number);
-}
 
 void main(List<String> args) {
   

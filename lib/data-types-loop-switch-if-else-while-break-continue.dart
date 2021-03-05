@@ -327,3 +327,11 @@ void main(List<String> arguments) {
     print('Odd : $k');
   }
 }
+
+class Number {
+  int num = 10;
+}
+
+void printNumber(number) {
+  print(number);
+}

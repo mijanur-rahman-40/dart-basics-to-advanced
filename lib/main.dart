@@ -115,16 +115,30 @@ void main() {
     },
   };
 
+  // set basically a unique number of collections
   var type13 = <Set<Map<String, Object>>>[
     {
       {
         'a': {'a1': 'a11'}
       },
       {
-        'a': {'b1': 'b11'}
+        'a': {'a1': 'b11'}
+      },
+    },
+    {
+      {
+        'a': {'a1': 'c11'}
+      },
+      {
+        'a': {'a1': 'd11'}
       },
     },
   ];
 
-  print(type13);
+  // print(type13[0]);
+  var setValues = type13[0].toSet();
+  setValues.map((element) => (print(element[0]))).toList();
+  var value = type13[0].toList()[0]['a'].toString();
+  // var value = type13[0].toList()[0].entries;
+  print(value);
 }
