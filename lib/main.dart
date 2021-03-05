@@ -142,7 +142,23 @@ void main() {
   // var value = type13[0].toList()[0].entries;
   print(value);
 
-  var list = {'a', 'b'};
-  var sd = list.map((e) => print(e));
+  var list = [
+    {'a': 'a1', 'b': 'b1'},
+    {'a': 'a2', 'b': 'b2'},
+  ];
+  
+  var listValue = [];
+  var listObjectValue = <AlphavetValue>[];
+  list.map((element) => listValue.add(element['a'])).toList();
+  listObjectValue =
+      list.map((element) => AlphavetValue(a: element['a'])).toList();
+      
+  print(listValue);
+  print(listObjectValue);
   print(list.runtimeType);
+}
+
+class AlphavetValue {
+  String a;
+  AlphavetValue({this.a});
 }
