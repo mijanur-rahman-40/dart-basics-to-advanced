@@ -141,4 +141,8 @@ void main() {
   var value = type13[0].toList()[0]['a'].toString();
   // var value = type13[0].toList()[0].entries;
   print(value);
+
+  var list = {'a', 'b'};
+  var sd = list.map((e) => print(e));
+  print(list.runtimeType);
 }
